@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mathijs Bronneberg — Full-stack Developer</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Mathijs Bronneberg is a full-stack developer who architects systems, guides implementations, and ships products that last — using AI as a tool, not a replacement." />
+  <meta name="author" content="Mathijs Bronneberg" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mathijsbronneberg.nl/" />
+
+  <!-- Open Graph (social sharing) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mathijsbronneberg.nl/" />
+  <meta property="og:title" content="Mathijs Bronneberg — Full-stack Developer" />
+  <meta property="og:description" content="Mathijs Bronneberg is a full-stack developer who architects systems, guides implementations, and ships products that last — using AI as a tool, not a replacement." />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Mathijs Bronneberg — Full-stack Developer" />
+  <meta name="twitter:description" content="Mathijs Bronneberg is a full-stack developer who architects systems, guides implementations, and ships products that last — using AI as a tool, not a replacement." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #2dd4bf 0%, #a78bfa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 24px 40px -12px rgba(45, 212, 191, 0.12);
+    }
+
+    .grid-pattern {
+      background-image:
+        linear-gradient(rgba(45, 212, 191, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(45, 212, 191, 0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    .tile-pattern {
+      background-color: #0f172a;
+      background-image:
+        linear-gradient(rgba(45, 212, 191, 0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(45, 212, 191, 0.12) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    .game-pattern {
+      background: radial-gradient(ellipse at 50% 60%, rgba(167, 139, 250, 0.18) 0%, #0f172a 70%);
+    }
+
+    .accounting-pattern {
+      background: linear-gradient(145deg, #0f172a 30%, rgba(16, 185, 129, 0.08) 100%);
+    }
+
+    .skill-tag {
+      transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+    .skill-tag:hover {
+      background-color: rgba(45, 212, 191, 0.1);
+      border-color: rgba(45, 212, 191, 0.4);
+      color: #5eead4;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 border-b border-slate-800/60 backdrop-blur-md" style="background: rgba(2, 6, 23, 0.85);">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <span class="mono text-sm text-teal-400 tracking-wide">mb.dev</span>
+      <div class="flex items-center gap-8">
+        <a href="#projects" class="text-sm text-slate-400 hover:text-slate-100 transition-colors hidden sm:block">Projects</a>
+        <a href="#about" class="text-sm text-slate-400 hover:text-slate-100 transition-colors hidden sm:block">About</a>
+        <div class="flex items-center gap-4">
+          <!-- GitHub -->
+          <a href="https://github.com/meddiecap" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-slate-400 hover:text-teal-400 transition-colors">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/mbronneberg/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-slate-400 hover:text-teal-400 transition-colors">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="grid-pattern min-h-screen flex items-center justify-center pt-16">
+    <div class="max-w-6xl mx-auto px-6 py-28 text-center">
+      <p class="mono text-teal-400 text-xs tracking-widest uppercase mb-8">Full-stack Developer</p>
+      <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
+        <span class="gradient-text">Mathijs</span><br />
+        <span class="text-slate-100">Bronneberg</span>
+      </h1>
+      <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+        I architect systems, guide implementations, and ship products that last,
+        using AI as a tool, not a replacement.
+      </p>
+      <div class="flex items-center justify-center gap-4 flex-wrap">
+        <a href="#projects" class="px-6 py-3 bg-teal-500 hover:bg-teal-400 text-slate-950 font-semibold rounded-lg transition-colors text-sm">
+          View my work
+        </a>
+        <a href="https://www.linkedin.com/in/mbronneberg/" target="_blank" rel="noopener noreferrer" class="px-6 py-3 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-slate-100 rounded-lg transition-colors text-sm">
+          Get in touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="mb-16">
+        <p class="mono text-teal-400 text-xs tracking-widest uppercase mb-3">Work</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-100">Recent Projects</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Interactive Globe -->
+        <article class="card-hover bg-slate-900 rounded-2xl overflow-hidden border border-slate-800">
+          <div class="h-48 flex items-center justify-center" style="background: radial-gradient(ellipse at 50% 55%, rgba(45, 212, 191, 0.15) 0%, rgba(14, 165, 233, 0.08) 45%, #0f172a 75%);">
+            <div class="text-center">
+              <div class="relative flex items-center justify-center" style="width:80px;height:80px;margin:0 auto;">
+                <svg viewBox="0 0 80 80" width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="40" cy="40" r="36" stroke="rgba(45,212,191,0.5)" stroke-width="1.5"/>
+                  <ellipse cx="40" cy="40" rx="20" ry="36" stroke="rgba(45,212,191,0.3)" stroke-width="1"/>
+                  <ellipse cx="40" cy="40" rx="36" ry="12" stroke="rgba(45,212,191,0.3)" stroke-width="1"/>
+                  <line x1="4" y1="40" x2="76" y2="40" stroke="rgba(45,212,191,0.2)" stroke-width="1"/>
+                  <line x1="40" y1="4" x2="40" y2="76" stroke="rgba(45,212,191,0.2)" stroke-width="1"/>
+                  <circle cx="40" cy="40" r="4" fill="rgba(45,212,191,0.8)"/>
+                </svg>
+              </div>
+              <div class="mono text-xs text-teal-300 tracking-widest mt-2">INTERACTIVE GLOBE</div>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-start justify-between mb-3">
+              <h3 class="text-lg font-semibold text-slate-100">Interactive Globe</h3>
+              <a href="https://meddiecap.github.io/interactive-country-globe/" target="_blank" rel="noopener noreferrer" aria-label="Open Interactive Globe" class="text-slate-500 hover:text-teal-400 transition-colors ml-2 mt-0.5 flex-shrink-0">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">
+              Browser-based 3D globe for exploring country data. Hover &amp; click country selection, live local time, World Bank economic indicators, and sparkline charts.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">Vue.js</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">Three.js</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">Tailwind</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Geometry Raptor -->
+        <article class="card-hover bg-slate-900 rounded-2xl overflow-hidden border border-slate-800">
+          <div class="game-pattern h-48 flex items-center justify-center">
+            <div class="text-center select-none">
+              <div class="text-4xl text-violet-400 mb-2" style="line-height:1;">▲</div>
+              <div class="mono text-xs text-violet-300 tracking-widest">SPACE SHOOTER</div>
+              <div class="mt-2 flex justify-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-violet-400/60"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-violet-400/30"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-violet-400/60"></span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-start justify-between mb-3">
+              <h3 class="text-lg font-semibold text-slate-100">Space Shooter</h3>
+              <a href="https://meddiecap.github.io/space-shooter/" target="_blank" rel="noopener noreferrer" aria-label="Play Space Shooter" class="text-slate-500 hover:text-teal-400 transition-colors ml-2 mt-0.5 flex-shrink-0">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">
+              Browser-based top-down shooter. Shoot, survive, and evolve through escalating waves. WASD controls. Served from GitHub Pages.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">JavaScript</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">Canvas API</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">Game Dev</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Laravel Accounting -->
+        <article class="card-hover bg-slate-900 rounded-2xl overflow-hidden border border-slate-800">
+          <div class="accounting-pattern h-48 flex items-center justify-center">
+            <div class="text-center">
+              <div class="flex items-end justify-center gap-1.5 h-12 mb-3">
+                <div class="w-2.5 bg-emerald-500/50 rounded-t-sm" style="height: 40%"></div>
+                <div class="w-2.5 bg-emerald-500/70 rounded-t-sm" style="height: 65%"></div>
+                <div class="w-2.5 bg-emerald-500/55 rounded-t-sm" style="height: 50%"></div>
+                <div class="w-2.5 bg-emerald-400 rounded-t-sm" style="height: 90%"></div>
+                <div class="w-2.5 bg-emerald-500/65 rounded-t-sm" style="height: 72%"></div>
+                <div class="w-2.5 bg-emerald-500/50 rounded-t-sm" style="height: 55%"></div>
+              </div>
+              <div class="mono text-xs text-emerald-400 tracking-widest">MyMemo</div>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-start justify-between mb-3">
+              <h3 class="text-lg font-semibold text-slate-100">MyMemo</h3>
+              <a href="https://bookkeeping-app-main-w97oxi.free.laravel.cloud/" target="_blank" rel="noopener noreferrer" aria-label="Open MyMemo" class="text-slate-500 hover:text-teal-400 transition-colors ml-2 mt-0.5 flex-shrink-0">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">
+              Full-stack accounting application. Built with Laravel, focused on clean architecture, maintainability, and a smooth user experience.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">Laravel</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">Inertia.js</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">Vue.js</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24 border-t border-slate-800/50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+        <div>
+          <p class="mono text-teal-400 text-xs tracking-widest uppercase mb-3">About</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-100 mb-8 leading-tight">
+            Beyond writing<br />code.
+          </h2>
+          <blockquote class="border-l-2 border-teal-500/60 pl-5">
+            <p class="text-slate-400 italic leading-relaxed text-sm">"In every stone a sculpture goes hidden."</p>
+          </blockquote>
+        </div>
+
+        <div class="space-y-5 text-slate-400 leading-relaxed text-[15px]">
+          <p>
+            I'm a full-stack developer focused on building reliable, user-friendly applications. I specialize in
+            <span class="text-slate-200 font-medium">Vue.js &amp; Nuxt</span> and
+            <span class="text-slate-200 font-medium">Laravel (PHP)</span>,
+            working across the stack to deliver clean, maintainable systems.
+          </p>
+          <p>
+            My role has evolved beyond writing code. I <span class="text-slate-200 font-medium">design architectures</span>,
+            guide implementations, and review code critically. I use AI to accelerate development while
+            maintaining full control over quality, structure, and long-term maintainability.
+          </p>
+          <p>
+            I'm pragmatic and product-driven. I take ownership, communicate clearly with technical
+            and non-technical stakeholders, and believe different perspectives lead to better solutions.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Skills -->
+      <div class="mt-20">
+        <p class="mono text-teal-400 text-xs tracking-widest uppercase mb-6">Stack</p>
+        <div class="flex flex-wrap gap-2.5">
+          <span class="skill-tag px-3 py-1.5 text-sm border border-slate-700 rounded-lg text-slate-400">Vue.js</span>
+          <span class="skill-tag px-3 py-1.5 text-sm border border-slate-700 rounded-lg text-slate-400">Nuxt</span>
+          <span class="skill-tag px-3 py-1.5 text-sm border border-slate-700 rounded-lg text-slate-400">TypeScript</span>
+          <span class="skill-tag px-3 py-1.5 text-sm border border-slate-700 rounded-lg text-slate-400">JavaScript</span>
+          <span class="skill-tag px-3 py-1.5 text-sm border border-slate-700 rounded-lg text-slate-400">Laravel</span>
+          <span class="skill-tag px-3 py-1.5 text-sm border border-slate-700 rounded-lg text-slate-400">PHP</span>
+          <span class="skill-tag px-3 py-1.5 text-sm border border-slate-700 rounded-lg text-slate-400">Tailwind CSS</span>
+          <span class="skill-tag px-3 py-1.5 text-sm border border-slate-700 rounded-lg text-slate-400">MySQL</span>
+          <span class="skill-tag px-3 py-1.5 text-sm border border-slate-700 rounded-lg text-slate-400">Node.js</span>
+          <span class="skill-tag px-3 py-1.5 text-sm border border-slate-700 rounded-lg text-slate-400">Git</span>
+          <span class="skill-tag px-3 py-1.5 text-sm border border-slate-700 rounded-lg text-slate-400">Cloudflare</span>
+          <span class="skill-tag px-3 py-1.5 text-sm border border-slate-700 rounded-lg text-slate-400">AI-assisted dev</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/50 py-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <span class="mono text-sm text-slate-600">© 2026 Mathijs Bronneberg</span>
+      <div class="flex items-center gap-6">
+        <a href="https://github.com/meddiecap" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-teal-400 transition-colors text-sm">GitHub</a>
+        <a href="https://www.linkedin.com/in/mbronneberg/" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-teal-400 transition-colors text-sm">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
