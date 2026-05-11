@@ -29,7 +29,11 @@ jobs:
             - run: npm run build
 
             - name: Copy site files to dist
-              run: cp index.html dist/index.html
+              run: |
+                  mkdir -p dist
+                  cp index.html dist/index.html
+                  cp output.css dist/output.css
+                  cp -r img dist/img
 
             - uses: actions/upload-pages-artifact@v3
               with:
