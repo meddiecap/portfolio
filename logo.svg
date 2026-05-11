@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 56" width="200" height="56">
+  <title>mb.dev</title>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <text x="6" y="42" font-family="'JetBrains Mono', monospace" font-size="40" letter-spacing="1" fill="url(#grad)">mb.dev</text>
+</svg>

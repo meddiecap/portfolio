@@ -82,8 +82,17 @@
   <!-- Navigation -->
   <nav class="fixed top-0 left-0 right-0 z-50 border-b border-slate-800/60 backdrop-blur-md" style="background: rgba(2, 6, 23, 0.85);">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <span class="mono text-sm text-teal-400 tracking-wide">mb.dev</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 18" height="16" aria-label="mb.dev" role="img">
+        <defs>
+          <linearGradient id="mb-logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#2dd4bf"/>
+            <stop offset="100%" stop-color="#a78bfa"/>
+          </linearGradient>
+        </defs>
+        <text x="1" y="13" font-family="'JetBrains Mono', monospace" font-size="13" letter-spacing="0.3" fill="url(#mb-logo-grad)">mb.dev</text>
+      </svg>
       <div class="flex items-center gap-8">
+        <a href="#client-work" class="text-sm text-slate-400 hover:text-slate-100 transition-colors hidden sm:block">Client Work</a>
         <a href="#projects" class="text-sm text-slate-400 hover:text-slate-100 transition-colors hidden sm:block">Projects</a>
         <a href="#about" class="text-sm text-slate-400 hover:text-slate-100 transition-colors hidden sm:block">About</a>
         <div class="flex items-center gap-4">
@@ -113,7 +122,7 @@
         <span class="text-slate-100">Bronneberg</span>
       </h1>
       <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-        I architect systems, guide implementations, and ship products that last.
+        I'm a full-stack developer focused on building reliable and user-friendly applications.
       </p>
       <div class="flex items-center justify-center gap-4 flex-wrap">
         <a href="#projects" class="px-6 py-3 bg-teal-500 hover:bg-teal-400 text-slate-950 font-semibold rounded-lg transition-colors text-sm">
@@ -122,6 +131,159 @@
         <a href="https://www.linkedin.com/in/mbronneberg/" target="_blank" rel="noopener noreferrer" class="px-6 py-3 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-slate-100 rounded-lg transition-colors text-sm">
           Get in touch
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Work at Zuiderlicht -->
+  <section id="client-work" class="py-24 border-t border-slate-800/50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="mb-16">
+        <p class="mono text-teal-400 text-xs tracking-widest uppercase mb-3">Professional Work</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-100 mb-4">At Zuiderlicht</h2>
+        <p class="text-slate-500 text-sm max-w-xl leading-relaxed">
+          Selected client projects I contributed to while working at
+          <a href="https://www.totaldesign.com/zuiderlicht/" target="_blank" rel="noopener noreferrer" class="text-teal-400 hover:text-teal-300 transition-colors">Zuiderlicht</a>,
+          an award-winning digital agency based in the Netherlands.
+        </p>
+      </div>
+
+      <!-- Row 1: Mosa + Formula Air (50/50) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+
+        <!-- Mosa -->
+        <article class="card-hover bg-slate-900 rounded-2xl overflow-hidden border border-slate-800">
+          <img src="./img/mosa.webp" alt="Mosa website" class="w-full block" loading="lazy">
+          <div class="p-6">
+            <div class="flex items-start justify-between mb-3">
+              <h3 class="text-lg font-semibold text-slate-100">Mosa</h3>
+              <a href="https://www.mosa.com" target="_blank" rel="noopener noreferrer" aria-label="Open Mosa website" class="text-slate-500 hover:text-teal-400 transition-colors ml-2 mt-0.5 flex-shrink-0">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">
+              Maintained tile products database synchronisation with regular updates and Algolia search index.
+              Performed server migration to improve reliability and speed. Provided ongoing support and maintenance for the website and underlying systems.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">Vue.js</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">PHP</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">Algolia</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">Cloudflare</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">jQuery</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Formula Air -->
+        <article class="card-hover bg-slate-900 rounded-2xl overflow-hidden border border-slate-800">
+          <img src="./img/formula-air.webp" alt="Formula Air website" class="w-full block" loading="lazy">
+          <div class="p-6">
+            <div class="flex items-start justify-between mb-3">
+              <h3 class="text-lg font-semibold text-slate-100">Formula Air</h3>
+              <a href="https://www.formula-air.com" target="_blank" rel="noopener noreferrer" aria-label="Open Formula Air website" class="text-slate-500 hover:text-teal-400 transition-colors ml-2 mt-0.5 flex-shrink-0">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">
+              Periodic website maintenance and component updates. Maintained a NetSuite API integration and product synchronisation with the local database and Algolia search index across seven languages.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">Vue.js</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">PHP</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">Algolia</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Row 2: Formani + Nederlandse Dansdagen + Woonpunt (1/3 each) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Formani -->
+        <article class="card-hover bg-slate-900 rounded-2xl overflow-hidden border border-slate-800">
+          <img src="./img/formani.webp" alt="Formani website" class="w-full block" loading="lazy">
+          <div class="p-6">
+            <div class="flex items-start justify-between mb-3">
+              <h3 class="text-lg font-semibold text-slate-100">Formani</h3>
+              <a href="https://www.formani.com" target="_blank" rel="noopener noreferrer" aria-label="Open Formani website" class="text-slate-500 hover:text-teal-400 transition-colors ml-2 mt-0.5 flex-shrink-0">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">
+              Periodic website maintenance and component updates. Implemented an external product API with automated jobs to keep the local product database in sync.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">Vue.js</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">PHP</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">REST API</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Nederlandse Dansdagen -->
+        <article class="card-hover bg-slate-900 rounded-2xl overflow-hidden border border-slate-800">
+          <img src="./img/nederlandsedansdagen.webp" alt="Nederlandse Dansdagen website" class="w-full block" loading="lazy">
+          <div class="p-6">
+            <div class="flex items-start justify-between mb-3">
+              <h3 class="text-lg font-semibold text-slate-100">Nederlandse Dansdagen</h3>
+              <a href="https://www.nederlandsedansdagen.nl" target="_blank" rel="noopener noreferrer" aria-label="Open Nederlandse Dansdagen website" class="text-slate-500 hover:text-teal-400 transition-colors ml-2 mt-0.5 flex-shrink-0">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">
+              Connected a static website to a ConcreteCMS. Developed and configured custom components and content blocks.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">ConcreteCMS</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">PHP</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Woonpunt -->
+        <article class="card-hover bg-slate-900 rounded-2xl overflow-hidden border border-slate-800">
+          <img src="./img/woonpunt.webp" alt="Woonpunt website" class="w-full block" loading="lazy">
+          <div class="p-6">
+            <div class="flex items-start justify-between mb-3">
+              <h3 class="text-lg font-semibold text-slate-100">Woonpunt</h3>
+              <a href="https://www.woonpunt.nl" target="_blank" rel="noopener noreferrer" aria-label="Open Woonpunt website" class="text-slate-500 hover:text-teal-400 transition-colors ml-2 mt-0.5 flex-shrink-0">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">
+              Connected a static website components and content blocks to ConcreteCMS. Developed custom components and migrated existing features to the new website.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">ConcreteCMS</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">PHP</span>
+              <span class="skill-tag px-2.5 py-1 text-xs border border-slate-700 rounded-md text-slate-400">JavaScript</span>
+            </div>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -274,7 +436,7 @@
             working across the stack to deliver clean, maintainable systems.
           </p>
           <p>
-            My role has evolved beyond writing code. I <span class="text-slate-200 font-medium">design architectures</span>,
+            My role has evolved beyond writing code. I design architectures,
             guide implementations, and review code critically. I use AI to accelerate development while
             maintaining full control over quality, structure, and long-term maintainability.
           </p>
